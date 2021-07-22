@@ -7,6 +7,11 @@
 
 <body>
     <h1>Forms in HTML</h1>
+
+    <!-- DOM, Client Server communicaiton  -->
+
+    <p>This is <b>bold text</b> <i>italic text</i> <u>underlined text</u>.</p>
+
     <!-- <form action="index.html" method="POST" novalidate> -->
     <form action="index.html" method="POST">
 
@@ -46,6 +51,25 @@
             <option value="4">C++</option>
         </select>
         <br>
+
+        <!-- Check boxes  -->
+        <label>Select Your skillset</label>
+        <div id="myskills">
+            <label> <input type="checkbox" value="Java" name="myskills">Java </label>
+            <label> <input type="checkbox" value="Spring" name="myskills">Spring </label>
+            <label> <input type="checkbox" value="HTML" name="myskills">HTML</label>
+            <label> <input type="checkbox" value="React" name="myskills">React</label>
+        </div>
+        <br>
+        <!-- File upload  -->
+        <label for="profile">Proflie</label>
+        <input type="file" id="profile" name="profile">
+        <br>
+
+
+
+        <br>
+        <!-- Submit and reset  -->
         <input type="submit" value="Send Data 2">
         <br>
         <input type="reset">
