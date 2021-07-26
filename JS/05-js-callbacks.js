@@ -24,14 +24,26 @@
 // let message = fun();
 // console.log(message);
 
-let fun = () => {
+// problem of async javascript 
+
+// let fun = () => {
+//     setTimeout(() => {
+//         return {message: 'fun message'};
+//     } , 1000);
+// }
+
+// let getFun = fun();
+// console.log(getFun.message);
+
+// solution 1. callback 
+
+let fun = (callback) => {
     setTimeout(() => {
-        return {message: 'fun message'};
-    } , 1000);
+        callback({ message: 'fun message' });
+    }, 2000);
 }
 
-let getFun = fun();
-console.log(getFun.message);
-
-
+fun(getFun => {
+    console.log(getFun.message);
+});
 
