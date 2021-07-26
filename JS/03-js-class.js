@@ -1,4 +1,8 @@
 
+class Class2 {
+    
+}
+
 class MyClass {
 
     constructor() {
@@ -12,4 +16,5 @@ class MyClass {
 }
 
 let obj = new MyClass();
+
 obj.fun();

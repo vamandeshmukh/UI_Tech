@@ -1,6 +1,6 @@
 
 function fun() {
-    console.log('This is a function.')
+    console.log('This is a function.');
 }
 
 let fun2 = () => {
