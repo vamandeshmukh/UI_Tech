@@ -37,13 +37,31 @@
 
 // solution 1. callback 
 
-let fun = (callback) => {
+// let fun = (abc) => {
+//     setTimeout(() => {
+
+//         abc({ message: 'fun message' });
+
+//     }, 2000);
+// }
+
+// fun((getFun) => {
+//     console.log(getFun.message);
+// }
+// );
+
+// simplified version 
+
+let fun = (abc) => {
     setTimeout(() => {
-        callback({ message: 'fun message' });
+
+        abc({ message: 'fun message' });
+
     }, 2000);
 }
 
-fun(getFun => {
+let someFunction = (getFun) => {
     console.log(getFun.message);
-});
+}
 
+fun(someFunction);
