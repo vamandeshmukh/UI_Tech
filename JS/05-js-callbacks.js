@@ -54,14 +54,16 @@
 
 let fun = (abc) => {
     setTimeout(() => {
-
-        abc({ message: 'fun message' });
-
+        abc(10, 20);
     }, 2000);
 }
 
-let someFunction = (getFun) => {
-    console.log(getFun.message);
+let argumentToAbc = (a, b) => {
+    console.log(a + b);
 }
 
-fun(someFunction);
+fun(argumentToAbc);
+
+// async 
+
+// await
