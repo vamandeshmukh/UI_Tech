@@ -1,7 +1,4 @@
 
-class Class2 {
-    
-}
 
 class MyClass {
 
